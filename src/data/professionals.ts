@@ -1,5 +1,16 @@
-// src/data/professionals.ts
-import { Professional } from '../../types';
+interface Professional {
+  id: number;
+  name: string;
+  profession: string;
+  city: string;
+  experience: string;
+  rating: number;
+  skills: string[];
+  contact: string;
+  email: string;
+  profilePic: string;
+  hourlyRate: string;
+}
 
 export const professionalsData: Professional[] = [
   {
@@ -81,6 +92,7 @@ export const professionalsData: Professional[] = [
     hourlyRate: "$58/hr"
   }
 ];
+
 
 
 
