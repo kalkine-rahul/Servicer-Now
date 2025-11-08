@@ -4,12 +4,16 @@ interface Professional {
   profession: string;
   city: string;
   experience: string;
-  rating: number;
   skills: string[];
-  contact: string;
-  email: string;
-  profilePic: string;
-  hourlyRate: string;
+  hourlyRate: number;
+  contact: {
+    phone: string;
+    email: string;
+  };
+  rating: number;
+  reviews: number;
+  image: string;
+  availability: string;
 }
 
 export const professionalsData: Professional[] = [
@@ -92,6 +96,7 @@ export const professionalsData: Professional[] = [
     hourlyRate: "$58/hr"
   }
 ];
+
 
 
 
