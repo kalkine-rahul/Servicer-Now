@@ -1,5 +1,6 @@
+// src/types/index.ts
 
-import interface Professional {
+export interface Professional {
   id: number;
   name: string;
   profession: string;
@@ -14,5 +15,5 @@ import interface Professional {
   rating: number;
   reviews: number;
   image: string;
-  availability: string; 
+  availability: string;
 }
